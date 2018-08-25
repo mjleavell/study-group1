@@ -1,3 +1,8 @@
+@media (max-width: 920px) {
+    .product-card {
+        flex: 1 27%;
+    }
+}
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0px;
@@ -38,6 +43,7 @@ h4 {
     padding: 0px;
     background-color: #f1f2f6;
     width: 30%;
+    flex: 1 30%;   /* flex-grow flex-basis */
 }
 
 /* SHOULD I GIVE THIS A CLASS INSTEAD? */
