@@ -49,11 +49,24 @@ h4 {
 }
 
 /* STYLING FOR CARD IMAGES */
-.card-description img {
+.card-image {
+    position: relative;
+}
+
+/* STYLING FOR PIE IMAGES */
+.card-image-pie {
     width: 75%;
     border: 1px solid black;
     margin: 30px auto 25px auto;
     display: block;
+}
+
+/* STYLING FOR SOLD OUT IMAGE DISPLAYED OVER PIE */
+.card-image-soldout {
+    position: absolute;
+    top: 5%;
+    bottom: 5%;
+    width: 100%;
 }
 
 /* PIE DESCRIPTION PARAGRAPH */
