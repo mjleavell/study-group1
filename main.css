@@ -1,0 +1,103 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    background-color: #ff4757;
+}
+
+h1 {
+    text-align: center;
+    margin: 45px 0px 25px 0px;
+    color: black;
+}
+
+h2 {
+    color: #ff6b81;
+}
+
+/* STYLING FOR SPECS AND PRICING HEADERS */
+h4 {
+    font-size: 20px;
+    margin: 0px 5px 0px 3px;
+}
+
+/* STYILING FOR ALL CARDS */
+.pie {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0px 35px 75px 35px;
+}
+/* tried position, adjusting width ????????????????? */
+
+/* STYLING FOR EACH INDIVIDUAL CARD */
+.card {
+    box-shadow: 5px 5px #ced6e0;
+    border: 3px solid black;
+    margin: 20px;
+    padding: 0px;
+    background-color: #f1f2f6;
+    width: 30%;
+}
+
+/* SHOULD I GIVE THIS A CLASS INSTEAD? */
+/* CARD TITLE BORDER */
+.card>header:first-child {
+    border: 1px solid lightblue;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* STYLING FOR CARD IMAGES */
+.card-description img {
+    width: 75%;
+    border: 1px solid black;
+    margin: 30px auto 25px auto;
+    display: block;
+}
+
+/* PIE DESCRIPTION PARAGRAPH */
+.card-description p {
+    text-align: justify;
+    padding: 0px 10px 0px 10px;
+}
+
+/* SHOULD I GIVE THIS A CLASS INSTEAD? */
+/* TARGETING AVALIABILITY P */
+.card-description p:last-child {
+    color: yellow;
+    background-color: darkgray;
+    font-weight: bold;
+    padding: 5px 0px 5px 3px;
+    margin-top: 0px;
+}
+
+/* SHOULD I GIVE THIS A CLASS INSTEAD? */
+.card-specs p, .card-pricing p {
+    margin: 0px 0px 0px 15px;
+    font-weight: bold;
+}
+
+/* SHOULD I GIVE THIS A CLASS INSTEAD? */
+/* CARD FOOTER STYLING */
+.card-specs p:last-child {
+    margin: 3px 0px 0px 0px;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+/* ADD MARGIN TO BOTTOM AFTER EACH SECTION */
+.card-description, .card-specs, .card-pricing {
+    margin-bottom: 20px;
+}
+
+/* ???BETTER TO USE POSITION OR LINE-HEIGHT???? */
+.footer {
+    text-align: center;
+    background-color: #ced6e0;
+    position: absolute;
+    /* line-height: 35px; */
+    /* height: 35px; */
+    width: 100%;
+}
+
