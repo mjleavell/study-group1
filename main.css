@@ -11,8 +11,13 @@ body {
 
 h1 {
     text-align: center;
-    margin: 45px 0px 25px 0px;
+    margin: 0px;
     color: black;
+    background-color: rgb(255,199,204,.5);
+    /* IS THERE A BETTER WAY TO WRITE CODE BELOW????? */
+    height: 125px;
+    line-height: 125px;
+    width: 100%;
 }
 
 h2 {
@@ -31,22 +36,22 @@ h4 {
     flex-flow: row wrap;
     justify-content: center;
     box-sizing: border-box;
-    margin: 0px 35px 75px 35px;
+    margin: 50px 20px 75px 20px;
+
 }
-/* tried position, adjusting width ????????????????? */
 
 /* STYLING FOR EACH INDIVIDUAL CARD */
 .card {
     box-shadow: 5px 5px #ced6e0;
     border: 3px solid black;
-    margin: 20px;
+    margin: 30px;
     padding: 0px;
     background-color: #f1f2f6;
-    width: 30%;
-    flex: 1 30%;   /* flex-grow flex-basis */
+    width: 28%;
+    min-width: 150px;
+    /* flex: 1 28%; */  /* flex-grow flex-basis makes cards weird on 2nd row if odd number */
 }
 
-/* SHOULD I GIVE THIS A CLASS INSTEAD? */
 /* CARD TITLE BORDER */
 .card>header:first-child {
     border: 1px solid lightblue;
@@ -65,6 +70,7 @@ h4 {
     border: 1px solid black;
     margin: 30px auto 25px auto;
     display: block;
+    flex: 1 28%;
 }
 
 /* STYLING FOR SOLD OUT IMAGE DISPLAYED OVER PIE */
@@ -91,13 +97,12 @@ h4 {
     margin-top: 0px;
 }
 
-/* SHOULD I GIVE THIS A CLASS INSTEAD? */
+/* SPECS/PRICING BOLD TEXT */
 .card-specs p, .card-pricing p {
     margin: 0px 0px 0px 15px;
     font-weight: bold;
 }
 
-/* SHOULD I GIVE THIS A CLASS INSTEAD? */
 /* CARD FOOTER STYLING */
 .card-specs p:last-child {
     margin: 3px 0px 0px 0px;
@@ -119,4 +124,3 @@ h4 {
     /* height: 35px; */
     width: 100%;
 }
-
